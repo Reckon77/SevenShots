@@ -1,0 +1,65 @@
+.navigation-bar {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.left-border {
+    border-left: 1px solid #474747;
+}
+
+a {
+    color: #474747;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.infos {
+    padding: 10px 0 0 0;
+}
+
+.b {
+    border-radius: 0 100px 100px 0;
+    background: #474747;
+    color: white;
+    border: none;
+}
+
+input {
+    border-radius: 100px 0 0 100px;
+    width: 30%;
+    color: white;
+    background: #474747;
+    border: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: inherit;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    padding: 0 10px 20px 10px;
+}
+
+.navbar {
+    background: #d2e1de;
+}
