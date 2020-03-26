@@ -16,6 +16,10 @@ a {
     padding: 0;
 }
 
+.collapse ul {
+    margin: 0 auto;
+}
+
 .infos {
     padding: 10px 0 0 0;
 }
@@ -62,4 +66,21 @@ input {
 
 .navbar {
     background: #d2e1de;
+}
+
+.brandmd {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    padding: 0;
+}
+
+@media(max-width:768px) {
+    .collapse li {
+        padding-top: 0;
+    }
+    .collapse a {
+        padding-top: 0;
+    }
 }
