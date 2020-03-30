@@ -69,12 +69,76 @@ input {
 }
 
 .brandmd {
-    font-family: 'Playfair Display', serif;
+    font-family:'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 900;
     font-stretch: ultra-expanded;
     padding: 0;
 }
+
+
+.carousel-inner > .carousel-item > img{
+    height: 120vh;
+    width:100% !important;
+
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+.carousel-caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+
+}
+.carousel-caption h3{
+    font-size: 2rem;
+   padding-bottom: .6rem;
+}
+
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+
+h3.heading{
+  font-family:  'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
+    padding-top: 3rem;
+}
+
+.heading-underline{
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 1rem;
+}
+
+.portfolio img{
+    max-width: 100%;
+    padding-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio img:hover{
+   transform: scale(1.1);
+   cursor: zoom-in;
+}
+.portfolio{
+    overflow:hidden;
+}
+
 
 @media(max-width:768px) {
     .navbar.scrolled {
