@@ -1,0 +1,33 @@
+h123.heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
+    padding-top: 3rem;
+}
+.line23 {
+    width: 60%;
+    height: 2px;
+    border-top: 2px solid grey;
+    margin-top: 65px;
+}
+
+.card123 img {
+    max-width: 100%;
+    padding-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card123 {
+    width: 100%;
+}
+
+.card123 img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.card123 {
+    overflow: hidden;
+}
