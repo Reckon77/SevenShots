@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+            body {
+            font-family: 'Open Sans', sans-serif;
+            max-width: 450px;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #354044;
+            font-size: 16px;
+            }
+
+            div {
+            margin-bottom: 20px;
+            }
+
+            h2 , label {
+            display: block;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #FDFEFF;
+            }
+
+            h2 {
+            width: 360px;
+            font-size: 4rem;
+            }
+
+
+            input {
+            max-width: 400px;
+            width: 80%;
+            height: 1.8rem;
+            border: 0;
+            }
+
+            textarea {
+            display: block;
+            max-width: 450px;
+            width: 80%;
+            height: 150px;
+            border: 0;
+            padding: 0;
+            }
+
+            button {
+            background-color: #98554F;
+            font-family: 'Open Sans', sans-serif;
+            max-width: 450px;
+            width: 80%;
+            border: 0;
+            color: #FDFEFF;
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding: 10px 0;
+            cursor: pointer;
+            }
+
+            button:hover {
+            transition: all 0.5s ease-in-out;
+            background-color: #FDFEFF;
+            color: #98554F;
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Let's talk</h2>
+  
+        <form>
+          <div>
+            <label for="name">Name*</label>
+            <input  id="name" type="text" name="name" required>
+         </div>
+         <div>
+           <label for="email">Email*</label>
+           <input id="email" type="email" name="email" required>
+         </div>
+         <div>
+           <label for="message">What can we help you with?*</label>
+           <textarea id="message" name="message" required></textarea>
+        </div>
+          <button type="submit">Send</button>
+        </form>
+     </div>
+</body>
+</html>
