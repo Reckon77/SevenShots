@@ -1,0 +1,227 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+html , body {
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardSpace {
+
+    width: 270px;
+    height: 450px;
+    transition: transform 300ms;
+    margin: 66px;
+
+}
+
+.cardShadow {
+
+    width: 90%;
+    height: 90%;
+    position: relative;
+    z-index: 3;
+    top: 18%;
+    left: 5%;
+    background-size: cover;
+    animation: backgroundPosition 15s infinite;
+    border-radius: 63px;
+    filter: blur(45px);
+    transition: transform 300ms, filter 300ms;
+
+}
+.card {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 6;
+    bottom: 90%;
+    overflow: hidden;
+    border-radius: 63px;
+
+}
+
+.cardBackground {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    background-size: cover;
+    animation: backgroundPosition 15s linear infinite;
+    filter: blur(45px);
+
+}
+
+.cardBlurLayer {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 6;
+    bottom: 100%;
+    background-color: rgba(0,0,0,0.15);
+
+}
+
+.cardInside {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 9;
+    bottom: 200%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.imgSpace {
+
+    width: 100%;
+    height: 270px;
+
+}
+
+.imgSpace div {
+
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 63px;
+    margin: 12px;
+    box-shadow: 0 0 33px -9px black ;
+    transition: width 300ms, height 300ms, border-radius 300ms , transform 300ms;
+
+}
+
+.userInfo {
+
+    width: 100%;
+    flex-grow: 1;
+
+}
+
+.userInfo h2 {
+
+    font-size: 2.1em;
+    margin: 15px 15px 0 15px;
+    text-shadow: -6px -15px 5.1px rgba(255,255,255,0.33);
+    opacity: 51%;
+    transition: text-shadow 300ms;
+
+}
+.userInfo p {
+
+    font-size: 0.9em;
+    margin: 3px 24px;
+    opacity: 33%;
+
+}
+
+.buttons {
+
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.buttons button {
+
+    width: 180px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.33);
+    margin: 12px;
+    border-radius:63px;
+    box-shadow: 0 0 33px -9px black ;
+    font-size: 0.9em;
+    transition: 300ms;
+
+}
+
+.cardSpace:hover {
+
+    transform: scale(1.11 , 1.11);
+
+}
+.cardSpace:hover .cardShadow {
+
+    transform: scale(1.05,1.05);
+    filter: blur(51px);
+
+}
+
+.cardSpace:hover .imgSpace div {
+
+    width: 246px;
+    height: 246px;
+    border-radius: 63px;
+
+}
+
+.cardSpace:hover .userInfo h2 {
+
+    text-shadow: 6px -15px 5.1px rgba(255,255,255,0.33);
+
+}
+
+.imgSpace div:hover {
+
+    transform: scale(0.96 , 0.96);
+
+}
+
+.buttons button:hover {
+
+    width: 201px;
+
+}
+
+.buttons button:active {
+
+    transform: scale(0.96,0.96);
+
+}
+
+@keyframes backgroundPosition {
+
+    0% {
+
+        background-position: left;
+
+    }
+    50% {
+
+        background-position: right;
+
+    }
+    100% {
+
+        background-position: left;
+
+    }
+
+}
